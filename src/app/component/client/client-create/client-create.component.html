@@ -1,0 +1,24 @@
+<!-- <p [id]="coolAttribute">client-create works!</p> -->
+
+<!-- <button (click)="doingSomething()"> Doing Something !</button> -->
+<mat-card-title>New Customer</mat-card-title>
+<mat-card>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Name" [(ngModel)]="client.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Profession" [(ngModel)]="client.profession" name="profession">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Wage ($)" [(ngModel)]="client.wage" name="wage">
+        </mat-form-field>
+    </form>
+
+    <button class="save" mat-raised-button (click)="createClient()">
+        SAVE
+    </button>
+    <button class="cancel" mat-raised-button (click)="deleteClient()">
+        CANCEL
+    </button>
+</mat-card>

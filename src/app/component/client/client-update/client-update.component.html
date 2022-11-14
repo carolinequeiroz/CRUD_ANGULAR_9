@@ -1,0 +1,22 @@
+<!-- <p>client-update works!</p> -->
+<mat-card-title>Alter Client</mat-card-title>   
+<mat-card>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Name" [(ngModel)]="client.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Profession" [(ngModel)]="client.profession" name="profession">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Wage ($)" [(ngModel)]="client.wage" name="wage">
+        </mat-form-field>
+    </form>
+
+    <button class="save" mat-raised-button (click)="update()">
+        CHANGE
+    </button>
+    <button class="cancel" mat-raised-button (click)="cancelClient()">
+        CANCEL
+    </button>
+</mat-card>

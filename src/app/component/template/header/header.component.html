@@ -1,0 +1,43 @@
+<!-- <p>header works!</p> -->
+<mat-toolbar class="header">
+    <span>
+        <a routerLink="/">
+            <img class="logo" src="assets/img/logo.png" alt="logo">
+        </a>
+    </span>
+    <span class="title-group">
+        <a routerLink="{{ routeUrl }}">
+            <i class="material-icons v-middle">
+                {{ icon }}
+            </i>
+         {{ title }}
+        </a>
+    </span>
+</mat-toolbar>
+<!-- <p>nav works!</p> -->
+<!-- 
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened="" fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons v-middel">
+                    house
+                </i>
+                Home
+            </a>
+            <a mat-list-item routerLink="/clients">
+                <i class="material-icons v-middel">
+                    group
+                </i>
+                Clients
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="content">
+
+        <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container> -->
